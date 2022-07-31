@@ -11,13 +11,7 @@ import RxSwift
 import RxCocoa
 
 
-class ReminderListViewController: UIViewController{
-    
-    private let tableView: UITableView = {
-        let table = UITableView()
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        return table
-    }()
+class ReminderListViewController: UICollectionViewController{
  
     private var viewModel = ReminderViewModel()
     
@@ -25,16 +19,33 @@ class ReminderListViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(tableView)
-        tableView.frame = view.bounds
+        collectionView.dataSource = nil
+        collectionView.delegate = nil
+        let listLayout = listLayout()
+        collectionView.collectionViewLayout = listLayout
+        collectionView.register(UICollectionViewListCell.self, forCellWithReuseIdentifier: "cell")
+
         bindTableData()
         
     }
     
+    private func listLayout() -> UICollectionViewCompositionalLayout {
+        var listConfiguration = UICollectionLayoutListConfiguration(appearance: .grouped)
+        listConfiguration.showsSeparators = false
+        listConfiguration.backgroundColor = .clear
+        return UICollectionViewCompositionalLayout.list(using: listConfiguration)
+    }
+    
     func bindTableData(){
-        viewModel.items.bind(to: tableView.rx.items(cellIdentifier: "cell", cellType: UITableViewCell.self)){row, model, cell in
-            cell.textLabel?.text = model.title
+        
+        viewModel.items.bind(to: collectionView.rx.items(cellIdentifier: "cell", cellType: UICollectionViewListCell.self)){ row, model, cell in
+            var contentConfiguration = cell.defaultContentConfiguration()
+            
+            contentConfiguration.text = model.title
+            cell.contentConfiguration = contentConfiguration
+
         }.disposed(by: bag)
+        
         
         viewModel.fetchItems()
     }
