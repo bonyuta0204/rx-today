@@ -11,13 +11,15 @@
 		3930D5D464912D8277748F4C /* libPods-rx-today.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 440BBDF167F8694AA0B42110 /* libPods-rx-today.a */; };
 		4EC40DAB2896652B00B35171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC40DAA2896652B00B35171 /* AppDelegate.swift */; };
 		4EC40DAD2896652B00B35171 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC40DAC2896652B00B35171 /* SceneDelegate.swift */; };
-		4EC40DAF2896652B00B35171 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC40DAE2896652B00B35171 /* ViewController.swift */; };
 		4EC40DB22896652B00B35171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC40DB02896652B00B35171 /* Main.storyboard */; };
 		4EC40DB42896652D00B35171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC40DB32896652D00B35171 /* Assets.xcassets */; };
 		4EC40DB72896652D00B35171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC40DB52896652D00B35171 /* LaunchScreen.storyboard */; };
 		4EC40DC22896652E00B35171 /* rx_todayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC40DC12896652E00B35171 /* rx_todayTests.swift */; };
 		4EC40DCC2896652E00B35171 /* rx_todayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC40DCB2896652E00B35171 /* rx_todayUITests.swift */; };
 		4EC40DCE2896652E00B35171 /* rx_todayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC40DCD2896652E00B35171 /* rx_todayUITestsLaunchTests.swift */; };
+		4EC40DDB2896696700B35171 /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC40DDA2896696700B35171 /* ReminderListViewController.swift */; };
+		4EC40DDE28969B2500B35171 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC40DDD28969B2500B35171 /* Reminder.swift */; };
+		4EC40DE128969B5000B35171 /* ReminderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC40DE028969B5000B35171 /* ReminderViewModel.swift */; };
 		E177D417420FB7DBCD2D8428 /* libPods-rx-today-rx-todayUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE88A1504CBE5C270DDE57A4 /* libPods-rx-today-rx-todayUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +47,6 @@
 		4EC40DA72896652B00B35171 /* rx-today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rx-today.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC40DAA2896652B00B35171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EC40DAC2896652B00B35171 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4EC40DAE2896652B00B35171 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4EC40DB12896652B00B35171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EC40DB32896652D00B35171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EC40DB62896652D00B35171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +56,9 @@
 		4EC40DC72896652E00B35171 /* rx-todayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rx-todayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC40DCB2896652E00B35171 /* rx_todayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rx_todayUITests.swift; sourceTree = "<group>"; };
 		4EC40DCD2896652E00B35171 /* rx_todayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rx_todayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4EC40DDA2896696700B35171 /* ReminderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListViewController.swift; sourceTree = "<group>"; };
+		4EC40DDD28969B2500B35171 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		4EC40DE028969B5000B35171 /* ReminderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewModel.swift; sourceTree = "<group>"; };
 		4F6E61C61FC6654AA00D2B62 /* Pods-rx-todayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-todayTests.debug.xcconfig"; path = "Target Support Files/Pods-rx-todayTests/Pods-rx-todayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5EA29AD2806C0AD50F27C2CF /* Pods-rx-today-rx-todayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-today-rx-todayUITests.release.xcconfig"; path = "Target Support Files/Pods-rx-today-rx-todayUITests/Pods-rx-today-rx-todayUITests.release.xcconfig"; sourceTree = "<group>"; };
 		98E29FFB87323CA410D2DA65 /* libPods-rx-todayTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rx-todayTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +105,6 @@
 				4F6E61C61FC6654AA00D2B62 /* Pods-rx-todayTests.debug.xcconfig */,
 				DBBB5156CCA582B17DC30CEA /* Pods-rx-todayTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,13 +133,15 @@
 		4EC40DA92896652B00B35171 /* rx-today */ = {
 			isa = PBXGroup;
 			children = (
+				4EC40DDF28969B4200B35171 /* ViewModels */,
+				4EC40DDC28969B1100B35171 /* Models */,
 				4EC40DAA2896652B00B35171 /* AppDelegate.swift */,
 				4EC40DAC2896652B00B35171 /* SceneDelegate.swift */,
-				4EC40DAE2896652B00B35171 /* ViewController.swift */,
 				4EC40DB02896652B00B35171 /* Main.storyboard */,
 				4EC40DB32896652D00B35171 /* Assets.xcassets */,
 				4EC40DB52896652D00B35171 /* LaunchScreen.storyboard */,
 				4EC40DB82896652D00B35171 /* Info.plist */,
+				4EC40DDA2896696700B35171 /* ReminderListViewController.swift */,
 			);
 			path = "rx-today";
 			sourceTree = "<group>";
@@ -156,6 +161,22 @@
 				4EC40DCD2896652E00B35171 /* rx_todayUITestsLaunchTests.swift */,
 			);
 			path = "rx-todayUITests";
+			sourceTree = "<group>";
+		};
+		4EC40DDC28969B1100B35171 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4EC40DDD28969B2500B35171 /* Reminder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4EC40DDF28969B4200B35171 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4EC40DE028969B5000B35171 /* ReminderViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		A99B659CB6BCD40A3F302780 /* Frameworks */ = {
@@ -371,9 +392,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EC40DAF2896652B00B35171 /* ViewController.swift in Sources */,
+				4EC40DE128969B5000B35171 /* ReminderViewModel.swift in Sources */,
 				4EC40DAB2896652B00B35171 /* AppDelegate.swift in Sources */,
+				4EC40DDB2896696700B35171 /* ReminderListViewController.swift in Sources */,
 				4EC40DAD2896652B00B35171 /* SceneDelegate.swift in Sources */,
+				4EC40DDE28969B2500B35171 /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
